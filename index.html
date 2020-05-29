@@ -8,129 +8,156 @@
 <body>
 	<!--wrapper start-->
 	<div class="wrapper">
-	<!--header start-->
-	<header>
-		<div class="head">
-			<div class="logo1">
-				<img src="img/logo.png" alt="logo insurance CF">
+		<!--header start-->
+		<header>
+			<div class="head">
+				<div class="logo1">
+					<img src="img/logo.png" alt="logo insurance CF">
+				</div>
+				<div class="banner">
+					<img src="img/banner.png" alt="banner Web Developer Vienna">
+				</div>			
+			</div>	
+		</header>
+		<!--header end-->
+		<!--nav start-->
+		<div class="nav">
+			<nav>
+				<ul>
+					<li><a href="#" title="">Home</a></li>
+					<li><a href="#" title="">Team</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!--nav end-->
+		<div class="backgrImg">
+		
+		
+			<h1 class="first">Car insurance</h1>
+			<!---div für formular-->
+			<div class="form">
+				<h1 class="second">Great coverage begins with a custom quote</h1>
+				<!--div für flexbox 1 formular start-->		
+				<div class="flex">
+					<!--icon start-->		
+					<div>		
+						<label>Your name:
+							<br>
+							<input type="text" name="name" id="name">				
+						</label>
+					</div>
+					<!--icon end-->
+					<!--icon start-->
+					<div>
+						<label>Age:
+							<br>
+							<input type="text" name="age" id="age">
+						</label>			
+					</div>
+					<!--icon end-->
+				</div>
+				<!--div für flexbox 1 formular end-->
+				<!--div für flexbox 2 formular start-->	
+				<div class="flex">
+				<!--icon start-->
+				<div>
+					<select name="" id="country">Country:
+						<br>
+						<option value="0">Austria</option>
+						<option value="1">Hungary</option>
+						<option value="2">Greece</option>				
+					</select>
+				</div>
+				<!--icon end-->
+				<!--icon start-->
+				<div>
+					<label>Horsepower of your car:
+						<br>				
+						<input type="text" name="car" id="power">
+					</label>
+				</div>
+				<!--icon end-->
 			</div>
-			<div class="banner">
-				<img src="img/banner.png" alt="banner Web Developer Vienna">
-			</div>			
-		</div>	
-	</header>
-	<!--header end-->
-	<!--nav start-->
-	<div class="nav">
-		<nav>
-			<ul>
-				<li><a href="#" title="">Home</a></li>
-				<li><a href="#" title="">Team</a></li>
-			</ul>
-		</nav>
-	</div>
-	<!--nav end-->
-	<div class="backgrImg">
-		
-		
-		<h1 class="first">Car insurance</h1>
-		<!---div für formular-->
-		<div class="form">
-		<h1 class="second">Great coverage begins with a custom quote</h1>
-				
-		<div class="flexForm">
-		<div class="content">		
-			<label>Your name:
-				<br>
-				<input type="text" name="name" id="name">				
-			</label>
+			<!--div für flexbox 2 formular end-->
 			<br>
-			<label>Age:
-				<br>
-				<input type="text" name="age" id="age">
-			</label>
-		</div>	
-			<br>
-			<select name="" id="country">Country:
-				<br>
-				<option value="0">Austria</option>
-				<option value="1">Hungary</option>
-				<option value="2">Greece</option>				
-			</select>
-			<br>
-			<br>
-			<label>Horsepower of your car:
-				<br>				
-				<input type="text" name="car" id="power">
-			</label>
-			<br>
-			<br>
-			<input type="button" id="submit" value="Calculate">
+			<!--submit button start-->
+			<div class="input">
+				<input type="submit" id="submit" value="Calculate">
+			</div>
+			<!--submit button end-->
+			</div>
+			<!--div form ende-->
+			<!--div ergebniss start-->
+			<div id="ergebnis" class="ergebnis"></div>
+			<!--div ergebniss ende-->			
 		</div>
-		<!--form ende-->
-		<!--div ergebniss-->
-		<div id="ergebnis" class="ergebnis"></div>
-		<!--div ergebniss ende-->		
-		</div>
-		<!--div für form ende-->
-		</div>
-		<h2>Un-complicating car coverage</h2>
-		<p>
-		Understanding your covarage options shouldn be so hars.
-		well guide you throug available voverage types,
-		starting with who and what is covered.
-		</p>
-		<!--div flexbox werbung start-->
-		<div>
-		<!--div werbung 1 start-->
-		<div>
-			<h4>What comes standard</h4>
-			<p>The coverage you need</p>
-			<ul>
-				<li>Bodily Injury Liability</li>
-				<li>Property Damage</li>
-				<li>Medical Payments</li>
-			</ul>
-			<h5>Benefits</h5>
+		<!--div backgroundimage end-->
+		<!--div "some infos" start-->
+		<div class="someInfo">
+			<h1>Un-complicating car coverage</h1>
 			<p>
-				12-month rate guarantee | 24/7 customer
+				Understanding your covarage options shouldn be so hars.
+				<br>				
+				well guide you throug available voverage types,
 				<br>
-				service | Lifetime Repair Guarantee
+				starting with who and what is covered.
 			</p>
 		</div>
-		<!--div werbung 1 end-->
-		<!--div werbung 2 start-->
-		<div>
-			<h4>Add-on protection & coverage</h4>
-			<p>For more peace of mind</p>
-			<ul>
-				<li>Better Car Replacement</li>
-				<li>Towing & Labor</li>
-				<li>Rental Car Coverage</li>
-			</ul>
-			<h5>Earned Benefits</h5>
-			<p>
-				Accident Forgiveness<sup>1</sup> | New Car
-				<br>
-				Replacement<sup>TM</sup>
-			</p>			
+		<!--div "some infos" end-->
+		<!--div flexbox werbung start-->
+		<div class="flex2">
+			<!--icon werbung 1 start-->
+			<div>
+				<h4>What comes standard</h4>
+				<p>The coverage you need</p>
+				<ul>
+					<li><span class="haken">✔</span> Bodily Injury Liability</li>
+					<li><span class="haken">✔</span> Property Damage</li>
+					<li><span class="haken">✔</span> Medical Payments</li>
+				</ul>
+				<h5>Benefits</h5>
+				<p>
+					12-month rate guarantee | 24/7 customer
+					<br>
+					service | Lifetime Repair Guarantee
+				</p>
+			</div>
+			<!--icon werbung 1 end-->
+			<!--icon werbung 2 start-->
+			<div>
+				<h4>Add-on protection & coverage</h4>
+				<p>For more peace of mind</p>
+				<ul>
+					<li><span class="haken">✔</span> Better Car Replacement</li>
+					<li><span class="haken">✔</span> Towing & Labor</li>
+					<li><span class="haken">✔</span> Rental Car Coverage</li>
+				</ul>
+				<h5>Earned Benefits</h5>
+				<p>
+					Accident Forgiveness<sup>1</sup> | New Car
+					<br>
+					Replacement<sup>TM</sup>
+				</p>			
+			</div>
+			<!--icon werbung 2 end-->
 		</div>
-		<!--div werbung end-->
-		</div>
-		<!--div flexbox werbung end-->
-	
+		<!-- flexbox werbung end-->	
 	<!--footer start-->
 	<footer>
-		<!--menue start-->		
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Team</a></li>
-			</ul>
-		</nav>
-		<!--menue end-->
-		<img src="img/logo-inv.png" alt="logo insurance CF">
-		<p>Kathrin Schey-CodeFactoty 2020</p>
+		<div class="footer">
+			<!--menue start-->		
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Team</a></li>
+				</ul>
+			</nav>
+			<!--menue end-->
+			<div>
+				<img src="img/logo-inv.png" alt="logo insurance CF">
+			</div>
+			<p>Kathrin Schey-CodeFactoty 2020</p>
+		</div>
 	</footer>
 	<!--footer end-->
 	</div>
