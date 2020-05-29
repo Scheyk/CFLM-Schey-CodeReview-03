@@ -6,28 +6,40 @@
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
+	<!--wrapper start-->
+	<div class="wrapper">
 	<!--header start-->
 	<header>
-		<img src="img/logo.png" alt="logo insurance CF">
-		<img src="img/banner.png" alt="banner Web Developer Vienna">	
+		<div class="head">
+			<div class="logo1">
+				<img src="img/logo.png" alt="logo insurance CF">
+			</div>
+			<div class="banner">
+				<img src="img/banner.png" alt="banner Web Developer Vienna">
+			</div>			
+		</div>	
 	</header>
 	<!--header end-->
 	<!--nav start-->
-	<nav>
-		<ul>
-			<li><a href="#" title="">Home</a></li>
-			<li><a href="#" title="">Team</a></li>
-		</ul>
-	</nav>
+	<div class="nav">
+		<nav>
+			<ul>
+				<li><a href="#" title="">Home</a></li>
+				<li><a href="#" title="">Team</a></li>
+			</ul>
+		</nav>
+	</div>
 	<!--nav end-->
-	<content>
-
-		<h1>Car insurance</h1>
+	<div class="backgrImg">
+		
+		
+		<h1 class="first">Car insurance</h1>
 		<!---div für formular-->
-		<div>
-		<h1>Great coverage begins with a custom quote</h1>
-		<!--form start-->		
-		<form>			
+		<div class="form">
+		<h1 class="second">Great coverage begins with a custom quote</h1>
+				
+		<div class="flexForm">
+		<div class="content">		
 			<label>Your name:
 				<br>
 				<input type="text" name="name" id="name">				
@@ -37,7 +49,7 @@
 				<br>
 				<input type="text" name="age" id="age">
 			</label>
-			<br>
+		</div>	
 			<br>
 			<select name="" id="country">Country:
 				<br>
@@ -54,13 +66,14 @@
 			<br>
 			<br>
 			<input type="button" id="submit" value="Calculate">
-		</form>
+		</div>
 		<!--form ende-->
 		<!--div ergebniss-->
 		<div id="ergebnis" class="ergebnis"></div>
 		<!--div ergebniss ende-->		
 		</div>
 		<!--div für form ende-->
+		</div>
 		<h2>Un-complicating car coverage</h2>
 		<p>
 		Understanding your covarage options shouldn be so hars.
@@ -105,7 +118,7 @@
 		<!--div werbung end-->
 		</div>
 		<!--div flexbox werbung end-->
-	</content>
+	
 	<!--footer start-->
 	<footer>
 		<!--menue start-->		
@@ -120,8 +133,10 @@
 		<p>Kathrin Schey-CodeFactoty 2020</p>
 	</footer>
 	<!--footer end-->
+	</div>
+	<!--wrapper end-->
 
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="javaScript/script.js"></script>
 
 </body>
 </html>

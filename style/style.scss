@@ -1,0 +1,79 @@
+$full: 800px;
+$red: #8E1616;
+$white: #FEFDFD;
+
+
+.wrapper {
+	width: $full;
+	margin: auto;
+}
+
+.head {
+	width: $full;	
+	background-color: #FFF3F3;
+	display: flex;
+	justify-content: space-between;
+	.logo1 {
+		width: 170px;
+		margin: 25px 10px;
+		img {
+			width: 100%;	 
+		}		
+	}
+	.banner {
+		width: 450px;
+		margin: 10px 10px;
+		img {
+		width: 100%;	 
+		}		
+	}
+}
+
+.nav {
+	nav {
+		width: $full;
+		ul {
+		list-style-type: none;
+		background-color: $red;
+		margin: 0px;
+		height: 30px;
+		padding: 0px;
+		li {
+			display: inline;
+			
+			a {
+				text-decoration: none;
+				color: $white;				
+			}
+		}
+
+		}
+	}	
+}
+
+.backgrImg {		
+	background-image: url("img/traffic-332857_1920.jpg");
+	width: $full;
+	height: 600px;
+	background-repeat: no-repeat;
+	border: 3px solid black;
+	.first {
+		padding-left: 10px;
+	}	
+}
+
+.form {
+		width: 70%;
+		height: 60%;
+		margin: auto;
+		border: 2px solid red;
+		.second {
+			text-align: center;
+			width: 60%;
+			margin: auto;
+		}		
+}
+
+.ergebnis {
+	display: none;
+}
