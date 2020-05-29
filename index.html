@@ -4,6 +4,7 @@
 	<title></title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<!--wrapper start-->
@@ -20,20 +21,30 @@
 			</div>	
 		</header>
 		<!--header end-->
+		<!--content start-->
+		<content>
 		<!--nav start-->
 		<div class="nav">
 			<nav>
 				<ul>
 					<li><a href="#" title="">Home</a></li>
-					<li><a href="#" title="">Team</a></li>
+					<li><a href="team.html" title="">Team</a></li>
 				</ul>
 			</nav>
 		</div>
 		<!--nav end-->
+		<!--backgroundImage container start-->
 		<div class="backgrImg">
-		
-		
-			<h1 class="first">Car insurance</h1>
+	<!--debug		--container for h1 transparency start--
+			<div class="first">
+				<img src="img/traffic-332857_1920.jpg" alt="">
+				<h1>Car insurance</h1>
+			</div>
+			--container for h1 transparency end--
+	debug ende-->
+		<h1>Car insurance</h1>
+		<img src="img/traffic-332857_1920.jpg" alt="picture with a red car">		
+			
 			<!---div für formular-->
 			<div class="form">
 				<h1 class="second">Great coverage begins with a custom quote</h1>
@@ -61,11 +72,12 @@
 				<div class="flex">
 				<!--icon start-->
 				<div>
-					<select name="" id="country">Country:
-						<br>
+					<label>Country:</label>
+					<br>
+					<select name="" id="country" class="country">
 						<option value="0">Austria</option>
 						<option value="1">Hungary</option>
-						<option value="2">Greece</option>				
+						<option value="2">Greece</option>										
 					</select>
 				</div>
 				<!--icon end-->
@@ -85,13 +97,13 @@
 				<input type="submit" id="submit" value="Calculate">
 			</div>
 			<!--submit button end-->
-			</div>
-			<!--div form ende-->
 			<!--div ergebniss start-->
 			<div id="ergebnis" class="ergebnis"></div>
-			<!--div ergebniss ende-->			
+			<!--div ergebniss ende-->
+			</div>
+			<!--div form ende-->						
 		</div>
-		<!--div backgroundimage end-->
+		<!--backgroundImage container end-->
 		<!--div "some infos" start-->
 		<div class="someInfo">
 			<h1>Un-complicating car coverage</h1>
@@ -142,6 +154,8 @@
 			<!--icon werbung 2 end-->
 		</div>
 		<!-- flexbox werbung end-->	
+	</content>
+	<!--content end-->
 	<!--footer start-->
 	<footer>
 		<div class="footer">
