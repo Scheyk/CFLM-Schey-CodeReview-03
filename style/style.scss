@@ -54,13 +54,20 @@ $white: #FEFDFD;
 }
 
 .backgrImg {		
-	background-image: url("img/traffic-332857_1920.jpg");
 	width: $full;
-	height: 600px;
-	background-repeat: no-repeat;
-	border: 3px solid black;	
+	height: 500px;
+	position: relative;	
 	.first {
-		padding-left: 10px;
+		width: 100%;		
+		background-image: transparent;		
+		position: absolute;		
+	}
+	h1 {
+    	margin: 0px;
+    }    	
+	img {
+		width: 100%;
+		height: 95%;
 	}	
 }
 
@@ -69,43 +76,69 @@ $white: #FEFDFD;
 }
 
 .form {
+	width: 75%;
+	height: 90%;
+    left: 0;
+    right: 0;
+    top: 20%;
+    margin: auto;    
+	background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #4C4C4C;
+    position: absolute;    
+    img {
+    	width: 100%;
+    	height: 100%;
+    }		
+	.second {
+		text-align: center;
 		width: 70%;
-		height: 60%;
 		margin: auto;
-		border: 2px solid red;
-		.second {
-			text-align: center;
-			width: 60%;
-			margin: auto;
-		}
-		.flex {
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			div {
-				margin: 10px 50px;
-				ul {
-					list-style-type: none;													
-				}
-			}			
-		}
-		.input {
-			width: 180px;
-			margin-left: auto;
-			margin-right: auto;
-			input {
-				width: 100%;
-				height: 40px;
-				background-color: #339235;
-				border-radius: 10px;
-				color: #FDFEFD;
-				font-size: 25px;
+		margin-bottom: 20px;
+		padding-top: 15px;
+	}
+	.flex {
+		width: 100%;		
+		display: flex;
+		justify-content: space-between;
+		div {
+			margin: 10px 50px;
+			ul {
+				list-style-type: none;													
 			}
+		}			
+	}
+	.input {
+		width: 180px;
+		margin-left: auto;
+		margin-right: auto;
+		input {
+			width: 100%;
+			height: 40px;
+			background-color: #339235;
+			border-radius: 10px;
+			color: #FDFEFD;
+			font-size: 25px;
 		}
-		.ergebnis {
-			display: none;
-		}		
+	}
+	.ergebnis {
+		visibility:hidden;
+		text-align: center;
+		margin-top: 30px;
+		font-size: 25px;		
+	}		
 }
+
+label {
+	input {
+		width: 160px;
+		height: 25px;
+	}
+	.country {		
+		width: 160px;
+		height: 25px;		
+	}
+}
+
 
 .someInfo {
 	width: 100%;
@@ -115,7 +148,7 @@ $white: #FEFDFD;
 	margin-bottom: 15px;
 	h1 {
 		margin-top: 0px;
-		padding-top: 20px;
+		padding-top: 55px;		
 	}
 	p {
 		font-size: 20px;
@@ -126,7 +159,7 @@ $white: #FEFDFD;
 
 .flex2 {
 	width: 95%;
-	margin: auto;
+	margin: 80px auto;	
 	display: flex;
 	justify-content: space-between;
 	div {
