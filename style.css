@@ -1,16 +1,16 @@
 /*
-Error: Invalid CSS after ".footer	": expected "{", was ""
-        on line 7 of C:\Users\kathr\Desktop\CFLM-Schey-CodeReview-03\style.scss
+Error: Invalid CSS after "...ibility: hidden": expected "{", was ";	"
+        on line 10 of C:\Users\kathr\Desktop\CFLM-Schey-CodeReview-03\style.scss
 
-2: 
-3: .nav
-4: 
 5: .content
 6: 
 7: .footer
+8: 
+9: .ergebnis
+10: 	visibility: hidden;
 
 Backtrace:
-C:\Users\kathr\Desktop\CFLM-Schey-CodeReview-03\style.scss:7
+C:\Users\kathr\Desktop\CFLM-Schey-CodeReview-03\style.scss:10
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
@@ -34,4 +34,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \".footer	\": expected \"{\", was \"\"\A         on line 7 of C:\Users\kathr\Desktop\CFLM-Schey-CodeReview-03\style.scss\A \A 2: \A 3: .nav\A 4: \A 5: .content\A 6: \A 7: .footer"; }
+  content: "Error: Invalid CSS after \"...ibility: hidden\": expected \"{\", was \";	\"\A         on line 10 of C:\Users\kathr\Desktop\CFLM-Schey-CodeReview-03\style.scss\A \A 5: .content\A 6: \A 7: .footer\A 8: \A 9: .ergebnis\A 10: 	visibility: hidden;"; }
