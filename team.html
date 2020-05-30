@@ -23,11 +23,14 @@
 		<h1> Team </h1>
 
 		<!--choose mitarbeiter start-->
-		<select name="" id="person">			
-			<option value="0">Fran</option>
-			<option value="1">Bill</option>
-			<option value="2">fritz</option>
-		</select>
+		<form>
+			<select name="" id="person">			
+				<option value="0">Fran</option>
+				<option value="1">Bill</option>
+				<option value="2">fritz</option>
+			</select>
+			<input type="submit" name="submit" id="submit" value="choose">
+		</form>
 		<!--choose mitarbeiter end-->		
 
 		<!--container start: ausgabe der ausgewählten person-->
@@ -43,20 +46,63 @@
 	<!--footer end-->
 
 <script type="text/javascript">
-	
+
+
 	function person()
 	{
-		var teamMembers = [
-		{name:"Fran", 
-		email:"fran@index.com",
-		image:"img/person1.png"},
-		{name:"Bill",
-		email:"bill@index.com",
-		image:"img/person2.png"},
-		{name:"Fritz", 
-		email:"fritz@index.com",
-		image:"img/person3.png"}
-		];
+		person = document.getElementById("person").value;
+		//document.getElementById("teamDaten").innerHTML = person;		
+
+		var mitarbeiter = {name:"Fran",email:"fran@index.com",image:"img/person1.png";
+					 	   name:"Bill",email:"bill@index.com",image:"img/person2.png";
+		 				   name:"Fritz",email:"fritz@index.com",image:"img/person3.png";}
+		 			      
+		 			      if (mitarbeiter[i])
+		 			      {
+		 			      	
+		 			      	document.getElementById("teamDaten").innerHTML = person;
+		 			      }
+		 			   
+
+	document.getElementById("submit").addEventListener("click", person);
+	
+	
+
+		/*var person = [{name:"Fran",email:"fran@index.com",image:"img/person1.png"},
+					 	{name:"Bill",email:"bill@index.com",image:"img/person2.png"},
+		 				{name:"Fritz",email:"fritz@index.com",image:"img/person3.png"}
+		 			  ]
+
+		 			  function submit() {
+  					  var elem = document.getElementById('button');
+ 					  elem.addEventListener('click', teamDaten);	
+					  };
+
+					function teamDaten()
+					{
+						var teamDaten = document.getElementById("teamDaten");
+
+						if (teamDaten)
+					}
+
+
+	/*	var member = {
+			name: this.name,
+			email: this.email,
+			image: this.image,
+			person: ["0","1","2"],
+
+			printFunc() {
+				return "Name: " + this.name + "<br> Email: " + this.email + "<br>" + this.image;
+			}
+	}
+
+		/*var teamMembers = [{name:"Fran",email:"fran@index.com",image:"img/person1.png"},
+							{name:"Bill",email:"bill@index.com",image:"img/person2.png"},
+							{name:"Fritz",email:"fritz@index.com",image:"img/person3.png"}
+						  ];
+		*/
+			
 	}
 
 </script>
