@@ -1,14 +1,26 @@
 $full: 800px;
 $red: #8E1616;
 $white: #FEFDFD;
-
+$Werb: #5C6C7E;
+$mediaquery: 480px;
 
 
 .wrapper {
+	max-width: $full;
 	width: $full;
 	margin: auto;
 	font-family: tahoma;
+	@media screen and (max-width: 480px) {
+	.wrapper {
+	width: $mediaquery;	
+	margin: auto;
+	font-family: tahoma;
+	background-color: blue;
+	}
 }
+}
+
+
 
 .head {
 	width: $full;	
@@ -55,7 +67,7 @@ $white: #FEFDFD;
 
 .backgrImg {		
 	width: $full;
-	height: 500px;
+	height: 400px;
 	position: relative;	
 	.first {
 		width: 100%;		
@@ -68,12 +80,11 @@ $white: #FEFDFD;
     	position: absolute;
     	color: $white;
     	top: 25px;
-    	left: 20px;
-    	//font-size: 20px;
+    	left: 20px;    	
     }    	
 	img {
 		width: 100%;
-		height: 95%;
+		height:100%;
 	}	
 }
 
@@ -116,21 +127,22 @@ $white: #FEFDFD;
 	.input {
 		width: 180px;
 		margin-left: auto;
-		margin-right: auto;
+		margin-right: auto;		
 		input {
 			width: 100%;
 			height: 40px;
 			background-color: #339235;
 			border-radius: 10px;
+			border: 0px;
 			color: #FDFEFD;
-			font-size: 25px;
+			font-size: 25px;			
 		}
 	}
 	.ergebnis {
 		visibility:hidden;
 		text-align: center;
 		color: #5EA15A;
-		margin-top: 30px;
+		margin-top: 10px;
 		font-size: 25px;		
 	}		
 }
@@ -165,26 +177,33 @@ label {
 }
 
 .flex2 {
-	width: 95%;
+	width: 95%;	
 	margin: 80px auto;	
 	display: flex;
 	justify-content: space-between;
 	div {
 		width: 40%;
-		border: 2px solid black;
+		border: 2px solid #EAEAEA;
+		border-top-color: #4A4A4A;
+		border-radius: 3px;
 		padding: 10px;
+		box-shadow: 0px 2px 0px #D7D6D7;
 		ul {
-			list-style-type: none;											
+			list-style-type: none;
+			color: $Werb; 
 		}
 		h4 {
-			color: #9CA1AF;
+			color: $Werb;
+			margin-bottom: 0;
 		}
 		h5 {
 			color: #575F64;
+			margin-bottom: 0;
 		}
 		p {
-			color: #A0B4BF;
-			font-size: 15px;
+			color: $Werb;
+			font-size: 12px;
+			margin-top: 0px;
 		}
 	}
 }
