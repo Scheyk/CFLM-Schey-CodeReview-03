@@ -62,8 +62,14 @@ $white: #FEFDFD;
 		background-image: transparent;		
 		position: absolute;		
 	}
-	h1 {
+	.carInsurance {
     	margin: 0px;
+    	background: rgba(255, 255, 255, 0);
+    	position: absolute;
+    	color: $white;
+    	top: 25px;
+    	left: 20px;
+    	//font-size: 20px;
     }    	
 	img {
 		width: 100%;
@@ -123,6 +129,7 @@ $white: #FEFDFD;
 	.ergebnis {
 		visibility:hidden;
 		text-align: center;
+		color: #5EA15A;
 		margin-top: 30px;
 		font-size: 25px;		
 	}		
