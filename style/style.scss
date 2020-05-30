@@ -9,6 +9,20 @@ $white: #FEFDFD;
 	font-family: tahoma;
 }
 //wrapper end
+@media screen and (max-width: 480px) {
+	.wrapper {
+		background-color: #B67CC2;
+	}
+	.head {
+		display: block;
+		.logo1 {
+			display: none;
+		}
+		.banner {
+			display: none;
+		}
+	}
+}
 //header start
 .head {
 	width: $full;	

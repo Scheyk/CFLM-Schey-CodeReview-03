@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 	<title>Team</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -21,14 +20,19 @@
 	<content>
 
 		<h1> Team </h1>
-
+		<!--form start-->
+		<form id="form">		
 		<!--choose mitarbeiter start-->
+		<label>Select:</label>		
 		<select name="" id="person">			
 			<option value="0">Fran</option>
 			<option value="1">Bill</option>
 			<option value="2">fritz</option>
 		</select>
-		<!--choose mitarbeiter end-->		
+		<!--choose mitarbeiter end-->
+		<button type="submit" id="submit">Submit</button>
+		</form>
+		<!--form end-->		
 
 		<!--container start: ausgabe der ausgewählten person-->
 		<div id="teamDaten" class="teamDaten"></div>
@@ -46,7 +50,7 @@
 	
 	function person()
 	{
-		var teamMembers = [
+		var person = [
 		{name:"Fran", 
 		email:"fran@index.com",
 		image:"img/person1.png"},
@@ -56,8 +60,22 @@
 		{name:"Fritz", 
 		email:"fritz@index.com",
 		image:"img/person3.png"}
-		];
+		];		
+		
+		person = document.getElementById("person").value;
+        document.getElementById("teamDaten").innerHTML = person;
+
+
+		for (i = 0; i == person; i++)
+		{
+			return String(this.name + "<br>" + this.email + "<br>" + this.image);
+		}		
+				
 	}
+
+	document.getElementById("submit").addEventListener("click", person);
+	
+
 
 </script>
 

@@ -3,6 +3,16 @@
   margin: auto;
   font-family: tahoma; }
 
+@media screen and (max-width: 480px) {
+  .wrapper {
+    background-color: #B67CC2; }
+
+  .head {
+    display: block; }
+    .head .logo1 {
+      display: none; }
+    .head .banner {
+      display: none; } }
 .head {
   width: 800px;
   background-color: #FFF3F3;
@@ -48,9 +58,6 @@
     width: 100%;
     height: 100%; }
 
-.haken {
-  color: #8FD2D4; }
-
 .form {
   width: 75%;
   height: 90%;
@@ -76,6 +83,12 @@
     justify-content: space-between; }
     .form .flex div {
       margin: 20px 50px; }
+      .form .flex div label input {
+        width: 160px;
+        height: 25px; }
+      .form .flex div label .country {
+        width: 160px;
+        height: 25px; }
   .form .input {
     width: 180px;
     margin-left: auto;
@@ -94,13 +107,6 @@
     margin-top: 30px;
     font-size: 25px;
     color: #63A35F; }
-
-label input {
-  width: 160px;
-  height: 25px; }
-label .country {
-  width: 160px;
-  height: 25px; }
 
 .someInfo {
   width: 100%;
@@ -131,6 +137,8 @@ label .country {
     color: #5D636F; }
     .flex2 div ul {
       list-style-type: none; }
+    .flex2 div .haken {
+      color: #8FD2D4; }
     .flex2 div h5 {
       color: #303337; }
     .flex2 div p {
