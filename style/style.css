@@ -59,9 +59,6 @@
     width: 100%;
     height: 100%; }
 
-.haken {
-  color: #8FD2D4; }
-
 .form {
   width: 75%;
   height: 90%;
@@ -87,13 +84,17 @@
     justify-content: space-between; }
     .form .flex div {
       margin: 10px 50px; }
-      .form .flex div ul {
-        list-style-type: none; }
-  .form .input {
+      .form .flex div label input {
+        width: 160px;
+        height: 25px; }
+      .form .flex div label .country {
+        width: 160px;
+        height: 25px; }
+  .form .submit {
     width: 180px;
     margin-left: auto;
     margin-right: auto; }
-    .form .input input {
+    .form .submit input {
       width: 100%;
       height: 40px;
       background-color: #339235;
@@ -107,13 +108,6 @@
     color: #5EA15A;
     margin-top: 10px;
     font-size: 25px; }
-
-label input {
-  width: 160px;
-  height: 25px; }
-label .country {
-  width: 160px;
-  height: 25px; }
 
 .someInfo {
   width: 100%;
@@ -140,20 +134,20 @@ label .country {
     border-top-color: #4A4A4A;
     border-radius: 3px;
     padding: 10px;
-    box-shadow: 0px 2px 0px #D7D6D7; }
+    box-shadow: 0px 2px 0px #D7D6D7;
+    color: #5C6C7E; }
     .flex2 div ul {
-      list-style-type: none;
-      color: #5C6C7E; }
+      list-style-type: none; }
     .flex2 div h4 {
-      color: #5C6C7E;
       margin-bottom: 0; }
     .flex2 div h5 {
       color: #575F64;
       margin-bottom: 0; }
     .flex2 div p {
-      color: #5C6C7E;
       font-size: 12px;
       margin-top: 0px; }
+  .flex2 .haken {
+    color: #8FD2D4; }
 
 .footer {
   width: 100%;
